@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #151515;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 120px;
+}
+
+.inside-header {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.inside-header h2 {
+    font-size: 16px;
+}
+
+.inside-header .inside-header-nav-desktop a {
+    margin-right: 20px;
+    transition: 200ms;
+}
+
+.inside-header .inside-header-nav-desktop a:hover {
+    color: #999;
+}
+
+.inside-header .inside-header-nav-desktop .remove-margin {
+    margin-right: 0;
+}
+
+.login-button {
+    background-color: #CC4341;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    transition: 200ms;
+}
+
+.login-button:hover {
+    background-color: #832b2a;
+    color: #999;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.inside-home {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.inside-home-left {
+    width: 50%;
+}
+
+.inside-home-left p {
+    margin-bottom: 20px;
+}
+
+.inside-home-left-buttons {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.report-button {
+    margin-right: 20px;
+    background-color: #CC4341;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    transition: 200ms;
+}
+
+.report-button:hover {
+    background-color: #832b2a;
+    color: #999;
+}
+
+.inside-home-right {
+    width: 50%;
+}
+
+.inside-home-right img {
+    width: 500px;
+    margin-left: 60px;
+}
+
+.covid {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.inside-covid {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-covid h2 {
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.inside-covid p {
+    width: 400px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.bg-detail {
+    width: 200px;
+    margin-right: -50px;
+}
+
+.data {
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.inside-data {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-data h2 {
+    margin-bottom: 40px;
+}
+
+.inside-data-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.inside-data-info-card {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #151515;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-right: 40px;
+}
+
+.inside-data-info p {
+    width: 360px;
+}
+
+.prevention {
+    width: 100%;
+    height: auto;
+}
+
+.inside-prevention {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-prevention h2 {
+    margin-bottom: 40px;
+}
+
+.inside-prevention-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.inside-prevention-info img {
+    margin-right: 40px;
+}
+
+.inside-prevention-info p {
+    width: 360px;
+}
+
+.vaccine {
+    width: 100%;
+    height: auto;
+}
+
+.inside-vaccine {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-vaccine div {
+    width: 60%;
+    height: auto;
+}
+
+.inside-vaccine div img {
+    transform: rotate(90deg);
+    width: 200px;
+    margin-bottom: -100px;
+    z-index: 0;
+}
+
+iframe {
+    width: 60%;
+    height: 350px;
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: -40px;
+}
+
+.recovery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.inside-recovery {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-recovery h2 {
+    margin-bottom: 40px;
+    margin-left: -80px;
+}
+
+.inside-recovery form {
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    color: #151515;
+    border-radius: 10px;
+    margin-left: -80px;
+}
+
+.inside-recovery-form-name {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 0px 50px;
+    margin-bottom: 20px;
+}
+
+.inside-recovery-form-email {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+    margin-bottom: 20px;
+}
+
+.inside-recovery-form-phone {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+    margin-bottom: 20px;
+}
+
+.inside-recovery-form-message {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    border-radius: 4px;
+    border: 1px solid #151515;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inside-recovery-form-message textarea {
+    resize: vertical;
+    border-radius: 4px;
+    border: 1px solid #151515;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.inside-recovery-form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.inside-recovery-form-button input[type="submit"] {
+    background-color: #CC4341;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.inside-recovery-form-button input[type="submit"]:hover {
+    background-color: #832b2a;
+    color: #999;
+}
+
+.inside-recovery form p {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.recovery-bg-detail {
+    width: 200px;
+    transform: rotate(180deg);
+    margin-left: -80px;
+}
+
+.report {
+    width: 100%;
+    height: auto;
+}
+
+.inside-report {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-report h2 {
+    margin-bottom: 40px;
+}
+
+.inside-report-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inside-report-div-card {
+    background-color: #fff;
+    color: #151515;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+.inside-report-div-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.inside-report-div-card-texts {
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.inside-report-div-card-texts-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.inside-footer {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside-footer h2 {
+    margin-bottom: 20px;
+}
+
+.inside-footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inside-footer-nav p {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.inside-footer-nav a {
+    margin-right: 20px;
+    transition: 200ms;
+}
+
+.inside-footer-nav a:hover {
+    color: #999;
+}
+
+.login-button-footer {
+    margin-right: 20px;
+    background-color: #CC4341;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    transition: 200ms;
+}
+
+.login-button-footer:hover {
+    background-color: #832b2a;
+    color: #999;
+}
+
+@media screen and (max-width: 860px) {
+    main {
+        margin-bottom: 100px;
+    }
+    
+    .inside-header {
+        flex-direction: column;
+    }
+
+    .inside-header h2 {
+        margin-bottom: 20px;
+    }
+
+    .inside-header nav {
+        margin-bottom: 20px;
+    }
+
+    .inside-header .login-button {
+        width: 80%;
+    }
+
+    .inside-home {
+        flex-direction: column;
+    }
+
+    .inside-home-left {
+        width: 100%;
+    }
+
+    .inside-home-left h1 {
+        text-align: center;
+    }
+
+    .inside-home-left p {
+        text-align: center;
+    }
+
+    .inside-home-left-buttons {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .inside-home-left-buttons .report-button {
+        margin-right: 0;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .inside-home-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .inside-home-right img {
+        margin-left: 0;
+    }
+
+    .inside-covid h2 {
+        margin-left: 0;
+    }
+
+    .inside-covid p {
+        margin-left: 0;
+    }
+
+    .inside-data {
+        width: 100%;
+    }
+
+    .inside-data-info {
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+
+    .inside-data-info-card {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .data {
+        margin-bottom: 100px;
+    }
+
+    iframe {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .bg-detail {
+        display: none;
+    }
+
+    .recovery-bg-detail {
+        display: none;
+    }
+
+    .inside-recovery form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .inside-recovery h2 {
+        margin-left: 0;
+    }
+
+    .inside-recovery-form-button {
+        align-items: center;
+    }
+
+    .inside-recovery-form-button input[type="submit"] {
+        width: 100%;
+    }
+
+    .inside-vaccine div img {
+        display: none;
+    }
+
+    .inside-vaccine h2 {
+        margin-bottom: 20px;
+    }
+
+    .inside-report-div {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inside-report-div a {
+        display: none;
+    }
+
+    .inside-report-div-card {
+        margin-right: 0;
+        height: auto;
+    }
+
+    .city {
+        margin-bottom: 40px;
+    }
+
+    .inside-footer-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .inside-footer-nav p {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .inside-footer-nav a {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .login-button-footer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .inside-report-div-card {
+        flex-direction: column;
+    }
+
+    .inside-report-div-card-texts {
+        padding-left: 40px;
+    }
+
+
+}
