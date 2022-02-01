@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main style="background-image: url(images/bg-login.png);">
+        <form action="cadastro_model.php" method="post">
+            <h1>Cadastro</h1>
+            <h2>INFO PÓS COVID - Área Médica</h2>
+            <div class="inside-form-inputs">
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="text" name="crm" id="crm" placeholder="CRM" required>
+                <input style="margin-bottom: 40px !important;" type="password" name="senha" id="senha" placeholder="Senha" required>
+            </div>
+            <div class="inside-form-buttons">
+                <a href="login.html">Voltar</a>
+                <input class="registration-button" type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

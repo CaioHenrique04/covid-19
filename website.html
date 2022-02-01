@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="website.css">
+    <title>Info Pós Covid</title>
+</head>
+
+<body>
+    <header>
+        <section class="inside-header">
+            <h2>INFO PÓS COVID</h2>
+            <nav class="inside-header-nav-desktop">
+                <a href="#covid">Covid</a>
+                <a href="#data">Dados</a>
+                <a href="#prevention">Prevenção</a>
+                <a href="#recovery">Pós</a>
+                <a class="remove-margin" href="#report">Resenha</a>
+            </nav>
+            <a class="login-button" href="login.html">Área Médica</a>
+        </section>
+    </header>
+    <main class="home">
+        <section class="inside-home">
+            <div class="inside-home-left">
+                <h1>Encontre informações recentes sobre Covid-19 e converse com médicos da região.</h1>
+                <p>Nos diga o que você está sentindo e entraremos <br> em contato, sem nenhum custo.</p>
+                <div class="inside-home-left-buttons">
+                    <a class="report-button" href="#recovery">Relatar</a>
+                </div>
+            </div>
+            <div class="inside-home-right">
+                <img src="images/home-image.svg" alt="Médico">
+            </div>
+        </section>
+    </main>
+    <main class="covid" id="covid">
+        <section class="inside-covid">
+            <h2>Covid-19</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
+                vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis fireball.</p>
+        </section>
+        <img class="bg-detail" src="images/bg-details.svg" alt="">
+    </main>
+
+    <main class="data" id="data">
+        <section class="inside-data">
+            <h2>Casos de Covid-19 pelo mundo</h2>
+            <div class="inside-data-info">
+                <div class="inside-data-info-card">
+                    <p><strong>Casos:</strong> 219 mi</p>
+                    <img src="images/world-icon.svg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla.</p>
+            </div>
+
+            <div class="inside-data-info">
+                <div class="inside-data-info-card">
+                    <p><strong>Recuperados:</strong> 178 mi</p>
+                    <img src="images/recovery-icon.svg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla.</p>
+            </div>
+
+            <div class="inside-data-info">
+                <div class="inside-data-info-card">
+                    <p><strong>Mortes:</strong> 6 mi</p>
+                    <img src="images/rip-icon.svg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla.</p>
+            </div>
+            <a href="#">Consultar informações</a>
+        </section>
+    </main>
+
+    <main class="prevention" id="prevention">
+        <section class="inside-prevention">
+            <h2>Prevenção contra o Covid-19</h2>
+            <div class="inside-prevention-info" style="margin-bottom: 40px;">
+                <img src="images/hand-icon.svg" alt="">
+                <div class="inside-prevention-info-texts">
+                    <p style="margin-bottom: 20px;"><strong>1. Lave bem as mãos</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, pue lorem lorem tri.</p>
+                </div>
+            </div>
+            <div class="inside-prevention-info" style="margin-bottom: 40px;">
+                <img src="images/mask-icon.svg" alt="">
+                <div class="inside-prevention-info-texts">
+                    <p style="margin-bottom: 20px;"><strong>2. Use máscara</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, pue lorem lorem ut aliquam,
+                        pue lorem lorem.</p>
+                </div>
+            </div>
+            <div class="inside-prevention-info">
+                <img src="images/alcohol-icon.svg" alt="">
+                <div class="inside-prevention-info-texts">
+                    <p style="margin-bottom: 20px;"><strong>3. Utilize álcool em gel</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="vaccine">
+        <section class="inside-vaccine">
+            <h2>Campanha de vacinação</h2>
+            <div><img src="images/bg-details.svg" alt=""></div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4-ZFCky5WZ4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <main class="recovery" id="recovery">
+        <img class="recovery-bg-detail" src="images/bg-details.svg" alt="">
+        <section class="inside-recovery">
+            <h2>Nos conte como foi a sua recuperação</h2>
+            <form action="relato_model.php" method="POST">
+                <div class="inside-recovery-form-name">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="inside-recovery-form-email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="inside-recovery-form-phone">
+                    <label for="telefone">WhatsApp com DDD:</label>
+                    <input type="text" name="telefone" id="telefone" required>
+                </div>
+                <div class="inside-recovery-form-message">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="10" required></textarea>
+                </div>
+                <div class="inside-recovery-form-button">
+                    <input type="submit" value="Enviar" name="submit-button" id="submit-button">
+                </div>
+                <p>“Não se dê por derrotado e siga adiante. As pedras que hoje atrapalham sua caminhada, amanhã
+                    enfeitarão a sua estrada.</p>
+            </form>
+        </section>
+    </main>
+
+    <main class="report" id="report">
+        <section class="inside-report">
+            <h2>Alguns relatos</h2>
+            <div class="inside-report-div">
+                <a href="#"><img style="margin-right: 30px;" src="images/arrow-left.svg" alt=""></a>
+                <div class="inside-report-div-card">
+                    <img src="images/people.png" alt="">
+                    <div class="inside-report-div-card-texts">
+                        <p class="inside-report-div-card-texts-name">Gustavo Lopes</p>
+                        <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                            aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor am, purus
+                            sit amet luctus venenatis, lectus magna fringilla urna, porttitor.</p>
+                        <p style="color: #ccc;">São Paulo, SP</p>
+                    </div>
+                </div>
+                <a href="#"><img src="images/arrow-right.svg" alt=""></a>
+            </div>
+            <img src="images/dots.svg" alt="">
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="inside-footer">
+            <h2>INFO PÓS COVID</h2>
+            <nav class="inside-footer-nav">
+                <p>Menu:</p>
+                <a href="">Covid</a>
+                <a href="">Dados</a>
+                <a href="">Prevenção</a>
+                <a href="">Pós</a>
+                <a href="">Resenha</a>
+                <a class="login-button-footer" href="login.html">Área Médica</a>
+            </nav>
+            <p style="margin-bottom: 20px;">Desenvolvido por Caio Henrique Barbosa Garcia.</p>
+            <p style="margin-bottom: 20px;">Todos os direitos reservados.</p>
+        </section>
+    </footer>
+</body>
+
+</html>

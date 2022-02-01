@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-left {
+    width: 25%;
+    height: 100vh;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: #fff;
+}
+
+.main-left h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.main-left p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-left a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.main-right {
+    width: 100%;
+    padding: 40px;
+}
+
+.main-right div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-right div h2 {
+    margin-bottom: 40px;
+}
+
+.main-right div a {
+    text-decoration: none;
+    color: #151515;
+    transition: 200ms;
+}
+
+.main-right p {
+    margin-bottom: 40px;
+}
+
+.main-right div a:hover {
+    color: #999;
+}
